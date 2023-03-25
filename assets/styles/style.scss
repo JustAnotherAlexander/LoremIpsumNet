@@ -1,0 +1,108 @@
+@import 'reset';
+
+/* Common variables */
+
+
+
+/* Header variables */
+
+/* Header Colors */
+$headerBackground: #10101D;
+$headerActiveNavigationLinkColor: #43ABF0;
+$headerInactiveNavLink: #FFFFFF;
+
+/* Header Fonts */
+$headerFontFamily: 'Lato';
+$headerFontStyle: normal;
+$headerFontWeight: 600;
+$headerFontSize: 13px;
+$headerFontLineHeight: 16px;
+/*End of Header variables */
+
+$primaryColor: #3E9CDC;
+$borderColor: #286690;
+$titleFont: 'Lato', normal;
+
+$sectionBackground: #272733;
+$footerBacground: #3D4050;
+$buttonBorderColor: #6F6D7B;
+$mainSectionInactiveButtonColor: #FFFFFF;
+
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: $headerBackground;
+
+    .header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+        width: 64%;
+        margin:auto;
+
+        .header__logo {
+            margin-left: 32px;
+        }
+        .menu__wrapper {
+            width:40%;
+            margin-top: 5px;
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                .menu__item {
+                    margin:auto;
+                    .menu__link {
+                        font-family: $titleFont;
+                        font-style: $headerFontStyle;
+                        font-weight: $headerFontWeight;
+                        font-size: $headerFontSize;
+                        line-height: $headerFontLineHeight;
+                        color: $headerInactiveNavLink;
+                    }
+                    & .selected {
+                        color: $headerActiveNavigationLinkColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main {
+    height: 850px;
+    margin-top: -100px;
+    background-image: url('../images/mainSection_background.png');
+    .mainContent {
+        .mainContent__titleWrapper {
+            .mainContent__title {
+
+            }
+        }
+        .mainContent__textWrapper {
+            .mainContent__text {
+
+            }
+        }
+        .mainContent__buttonsWrapper {
+            .mainContent__button {
+
+            }
+        }
+    }
+}
+
+.active {
+
+}
+
+.selected {
+
+}
