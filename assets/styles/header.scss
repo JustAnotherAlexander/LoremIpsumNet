@@ -1,0 +1,57 @@
+/* Header variables */
+
+/* Header Colors */
+$headerBackground: #10101D;
+$headerActiveNavigationLinkColor: #43ABF0;
+$headerInactiveNavLink: #FFFFFF;
+
+/* Header Fonts */
+$headerFontFamily: 'Lato';
+$headerFontStyle: normal;
+$headerFontWeight: 600;
+$headerFontSize: 13px;
+$headerFontLineHeight: 16px;
+/*End of Header variables */
+
+.header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: $headerBackground;
+
+    .header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+        width: 64%;
+        margin:auto;
+
+        .header__logo {
+            margin-left: 32px;
+        }
+        .menu__wrapper {
+            width:40%;
+            margin-top: 5px;
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                .menu__item {
+                    margin:auto;
+                    .menu__link {
+                        font-family: $headerFontFamily;
+                        font-style: $headerFontStyle;
+                        font-weight: $headerFontWeight;
+                        font-size: $headerFontSize;
+                        line-height: $headerFontLineHeight;
+                        color: $headerInactiveNavLink;
+                    }
+                    & .selected {
+                        color: $headerActiveNavigationLinkColor;
+                    }
+                }
+            }
+        }
+    }
+}
