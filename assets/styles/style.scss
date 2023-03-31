@@ -1,10 +1,15 @@
 @import 'reset';
 @import 'header';
 @import 'mainSection';
-
-/* Common variables */
-
+@import 'footer';
+@import 'orderSection';
 
 a {
     text-decoration: none;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
