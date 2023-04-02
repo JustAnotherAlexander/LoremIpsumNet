@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Document</title>
+    <title>LoremIpsum.net</title>
 </head>
 <body>
     <header class="header">
@@ -13,7 +13,7 @@
             <a href="#" class="header__logo">
                 <img src="./assets/images/header_logo.png" alt="LOREMIPSUM.NET">
             </a>
-            <nav class="menu__wrapper">
+            <nav class="menu__wrapper" id="menu__wrapper">
                 <ul class="menu">
                     <li class="menu__item selected">
                         <a class="menu__link selected" href="#">БИЗНЕС</a>
@@ -30,6 +30,35 @@
                 </ul>
             </nav>
         </div>
+<!--
+     <div class="burger_wrapper">
+            <img id="burger" class="burger_menu" src="./assets/images/Burger.png" alt="menu">
+        </div>
+        <div class="burger_list_wrapper">
+            <div class="burger_menu_list" id="burger_menu_list">
+                <ul class="burger_list">
+                    <li class="menu__item selected">
+                        <a class="menu__link selected" href="#">БИЗНЕС</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">О НАС</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">ЦЕНЫ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+
+        <div class="burger_logo" id="burger_logo">
+            <img src="./assets/images/header_logo.png" alt="LOREMIPSUM.NET">
+        </div>
+
+-->
+       
     </header>
     <main class="main">
         <section class="mainContent">
@@ -70,6 +99,7 @@
                 <div class="orderSection__title">Оформление заказа</div>
                 <div class="orderSection__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
                 <div class="orderSection__sheme">
+                    <!--
                     <div class="orderSection__shemeItem">
                         <div class="orderSection__shemeImage">
                             <img src="./assets/images/search.png" alt="Search">
@@ -116,6 +146,53 @@
                         </div>
                         <div class="orderSection__shemeText">
                             Excepteur sint occaecat cupidatat non proident
+                        </div>
+                    </div>
+                    -->
+                    <div class="orderSection__shemeSlider">
+                        <div class="orderSection__shemeSliderLeftArrow">
+                            >
+                        </div>
+                        <div class="orderSection__shemeSliderContainer" id="orderSection__shemeSliderContainer">
+                            <div class="orderSection__shemeItem">
+                                <div class="orderSection__shemeImage">
+                                    <img src="./assets/images/search.png" alt="Search">
+                                </div>
+                                <div class="orderSection__shemeText">
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                            </div>
+                            <div class="orderSection__shemeItem hidden">
+                                <div class="orderSection__shemeImage">
+                                    <img src="./assets/images/percent.png" alt="percent">
+                                </div>
+                                <div class="orderSection__shemeText">
+                                    Сonsecteturadipiscing elit
+                                </div>
+                            </div>
+                            <div class="orderSection__shemeItem hidden">
+                                <div class="orderSection__shemeImage">
+                                    <img src="./assets/images/document.png" alt="addDocument">
+                                </div>
+                                <div class="orderSection__shemeText">Sed do eiusmod tempor</div>
+                            </div>
+                            <div class="orderSection__shemeItem hidden">
+                                <div class="orderSection__shemeImage">
+                                    <img src="./assets/images/mail.png" alt="mail">
+                                </div>
+                                <div class="orderSection__shemeText">Esse cillum dolore eu fugiat</div>
+                            </div>
+                            <div class="orderSection__shemeItem hidden">
+                                <div class="orderSection__shemeImage">
+                                    <img src="./assets/images/money.png" alt="money">
+                                </div>
+                                <div class="orderSection__shemeText">
+                                    Excepteur sint occaecat cupidatat non proident
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orderSection__shemeSliderArrow">
+                            >
                         </div>
                     </div>
                 </div>
@@ -212,4 +289,6 @@
 </body>
 
 <script src="./assets/scripts/dropdown.js"></script>
+<script src="./assets/scripts/burgerMenu.js"></script>
+<script src="./assets/scripts/slider.js"></script>
 </html>

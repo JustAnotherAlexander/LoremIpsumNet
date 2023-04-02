@@ -1,3 +1,15 @@
+/*Common variables*/
+$sectionBackground: #272733;
+$titleFontColor: #FFFFFF;
+$subtitleFontColor: #BBBBBB;
+$commonFontColor: #FFFFFF;
+$blueThemeBackground: #3E9CDC;
+$blueThemeBorderColor: #286690;
+$shemeItemBorder: 5px solid $blueThemeBorderColor;
+$dropdownMenuItemColor: #42A9ED;
+
+
+
 option {
     width: 370px;
     height: 48px;
@@ -6,14 +18,14 @@ option {
 .orderSection {
     height: 920px;
     width: 100%;
-    background-color: #272733;
+    background-color: $sectionBackground;
     background-image: url(../images/content_background.png);
     display: flex;
     justify-content: center;
     align-items: center;
     .orderSection__wrapper {
         height: 650px;
-        width: 1172px;
+        width: 61%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -28,7 +40,7 @@ option {
             align-items: center;
             text-transform: uppercase;
             margin-top: -15px;
-            color: #FFFFFF;
+            color: $titleFontColor;
         }
         .orderSection__subtitle {
             display: flex;
@@ -43,7 +55,7 @@ option {
             display: flex;
             align-items: center;
             margin-top: 25px;
-            color: #BBBBBB;
+            color: $subtitleFontColor;
             letter-spacing: 1px;
         }
         .orderSection__sheme {
@@ -62,8 +74,8 @@ option {
                     width:100px;
                     height:100px;
                     border-radius: 50px;
-                    background-color: #3E9CDC;
-                    border: 5px solid #286690;
+                    background-color: $blueThemeBackground;
+                    border: $shemeItemBorder;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -76,7 +88,7 @@ option {
                     line-height: 19px;
                     text-align: center;
                     margin-top: 23px;
-                    color: #FFFFFF;
+                    color: $commonFontColor;
                     text-align: center;
                 }
             }
@@ -118,7 +130,7 @@ option {
                         font-size: 18px;
                         line-height: 22px;
                         letter-spacing: 0.7px;
-                        color: #FFFFFF;
+                        color: $commonFontColor;
                     }
                     .orderSection__sliderPercent {
                         font-family: 'Lato';
@@ -127,7 +139,7 @@ option {
                         font-size: 18px;
                         line-height: 22px;
 
-                        color: #FFFFFF;
+                        color: $commonFontColor;
                     }
                 }
                 .orderSection__sliderBar {
@@ -142,8 +154,8 @@ option {
                         position: relative;
                         width: 25px;
                         height: 25px;
-                        background-color: #3e9cdc;
-                        border: 3px solid #286690;
+                        background-color: $blueThemeBackground;
+                        border: 3px solid $blueThemeBorderColor;
                         border-radius: 18px;
                         margin-left: 84%;
                     }
@@ -153,7 +165,7 @@ option {
                 width: 370px;
                 height: 48px;
                 background: #FFFFFF;
-                border: 2px solid #3E9CDC;
+                border: 2px solid $blueThemeBackground;
                 border-radius: 3px;
                 margin-top: 10px;
                 display: flex;
@@ -186,7 +198,7 @@ option {
             height: 48px;
             margin-top: 40px;
 
-            background: #3E9CDC;
+            background: $blueThemeBackground;
             border: 1px solid #FFFFFF;
             border-radius: 4px;
 
@@ -201,7 +213,7 @@ option {
                 text-align: center;
                 text-transform: uppercase;
 
-                color: #FFFFFF;
+                color: $commonFontColor;
             }
 
         }
@@ -210,10 +222,17 @@ option {
   
   .orderSection__Input {
     position: relative;
-    width: 370px;
+    width: 31%;
     height: 48px;
     margin: 0 auto;
     background-color: #fff;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 12px;
+
   
     &[data-state="active"] {
         background: rgba(61, 64, 80, 0.85);
@@ -225,7 +244,7 @@ option {
         display: flex;
         align-items: center;
 
-        color: #FFFFFF;
+        color: $commonFontColor;
       .orderSection__InputTitle {
         &::before {
           transform: translate(-3px, -50%) rotate(-45deg);
@@ -254,7 +273,7 @@ option {
         display: flex;
         align-items: center;
 
-        color: #FFFFFF;
+        color: $commonFontColor;
       }
     }
   }
@@ -263,7 +282,7 @@ option {
     align-items: center;
     width: 100%;
     height: 100%;
-    padding: 8px 16px;
+    padding: 8px 0;
   
     border-radius: 5px;
     
@@ -292,11 +311,11 @@ option {
     }
   
     &:hover {
-      border-color: #3E9CDC;
+      border-color: $blueThemeBackground;
   
       &::before,
       &::after {
-        background-color: #3E9CDC;
+        background-color: $blueThemeBackground;
       }
     }
   }
@@ -309,7 +328,7 @@ option {
     height: calc(48px*5);
     overflow-y: scroll;
     background-color: #ffffff;
-    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-color: $blueThemeBackground #3D4050;
     scrollbar-width: thin;
     border-top: none;
     border-bottom-left-radius: 5px;
@@ -327,7 +346,7 @@ option {
     display: none;
   
     &:checked + label {
-      color: #42A9ED !important;
+      color: $dropdownMenuItemColor !important;
     }
   }
   .orderSection__ItemLabel {
@@ -345,9 +364,9 @@ option {
     overflow: hidden;
     
     &:hover {
-      background-color: #3E9CDC !important;
+      background-color: $blueThemeBackground !important;
   
-      color: #ffffff;
+      color: $commonFontColor;
     }
   }
 
@@ -361,5 +380,11 @@ option {
 
   .orderSection__InputContent::-webkit-scrollbar-track {border-radius: 3px;}
 .orderSection__InputContent::-webkit-scrollbar {width: 6px;}
-.orderSection__InputContent::-webkit-scrollbar-thumb {border-radius: 3px;background: #3E9CDC;}
-.orderSection__InputContent:hover::-webkit-scrollbar-thumb {background: #42A9ED;}
+.orderSection__InputContent::-webkit-scrollbar-thumb {border-radius: 3px;background: $blueThemeBackground;}
+.orderSection__InputContent:hover::-webkit-scrollbar-thumb {background: $dropdownMenuItemColor;}
+
+.orderSection__shemeSliderContainer {
+    width: 150px;
+    display: flex;
+    overflow: hidden;
+}
