@@ -35,8 +35,15 @@
         <section class="mainContent">
             <div class="mainContent__Wrapper">
                 <div class="mainContent__titleWrapper">
-                    <span class="mainContent__title boldText">Lorem ipsum dolor sit </span>
-                    <span class="mainContent__title boldText"> amet consectetur adipiscing</span>
+                    <div>
+                        <span class="mainContent__title boldText">Lorem ipsum</span>
+                        <span class="mainContent__title">&nbsp; dolor sit </span>
+                    </div>
+                    <div>
+                        <span class="mainContent__title">amet consectetur </span>
+                        <span class="mainContent__title boldText">&nbsp;adipiscing</span>
+                    </div>
+                    
                 </div>
                 <div class="mainContent__textWrapper">
                     <span class="mainContent__text subtitle">
@@ -61,7 +68,7 @@
         <section class="orderSection">
             <div class="orderSection__wrapper">
                 <div class="orderSection__title">Оформление заказа</div>
-                <div class="orderSection__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы</div>
+                <div class="orderSection__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
                 <div class="orderSection__sheme">
                     <div class="orderSection__shemeItem">
                         <div class="orderSection__shemeImage">
@@ -114,7 +121,31 @@
                 </div>
                 <div class="orderSection__inputWrapper">
                     
-                    <input class="orderSection__Input">
+                    <div class="orderSection__Input" id="orderSection__dropdown" data-state="">
+                        <div class="orderSection__InputTitle" data-default="Выберите тип системы">Выберите тип системы</div>
+                        <div class="orderSection__InputContent">
+                          <input id="singleSelect0" class="orderSection__InputItem" type="radio" name="singleSelect" checked />
+                          <label for="singleSelect0" class="orderSection__ItemLabel">Sed ut perspiciatis</label>
+                          <input id="singleSelect1" class="orderSection__InputItem" type="radio" name="singleSelect" />
+                          <label for="singleSelect1" class="orderSection__ItemLabel">Nemo enim ipsam</label>
+                          <input id="singleSelect2" class="orderSection__InputItem" type="radio" name="singleSelect"/>
+                          <label for="singleSelect2" class="orderSection__ItemLabel">Et harum quidem</label>
+                          <input id="singleSelect3" class="orderSection__InputItem" type="radio" name="singleSelect" />
+                          <label for="singleSelect3" class="orderSection__ItemLabel">Temporibus autem</label>
+                          <input id="singleSelect4" class="orderSection__InputItem" type="radio" name="singleSelect" />
+                          <label for="singleSelect4" class="orderSection__ItemLabel">Itaque earum rerum</label>
+                          <input id="singleSelect5" class="orderSection__InputItem" type="radio" name="singleSelect" checked />
+                          <label for="singleSelect5" class="orderSection__ItemLabel">Sed ut perspiciatis</label>
+                          <input id="singleSelect6" class="orderSection__InputItem" type="radio" name="singleSelect" />
+                          <label for="singleSelect6" class="orderSection__ItemLabel">Nemo enim ipsam</label>
+                          <input id="singleSelect7" class="orderSection__InputItem" type="radio" name="singleSelect"/>
+                          <label for="singleSelect7" class="orderSection__ItemLabel">Et harum quidem</label>
+                          <input id="singleSelect8" class="orderSection__InputItem" type="radio" name="singleSelect" />
+                          <label for="singleSelect8" class="orderSection__ItemLabel">Temporibus autem</label>
+                          <input id="singleSelect9" class="orderSection__InputItem" type="radio" name="singleSelect" />
+                          <label for="singleSelect9" class="orderSection__ItemLabel">Itaque earum rerum</label>
+                        </div>
+                      </div>
                     <input class="orderSection__Input" type="email" name="customerEmail" id="customerEmail1" placeholder="Ваш e-mail">
                     <input class="orderSection__Input" type="text" name="customerName" id="customerName1" placeholder="Ваше имя">
                 </div>
@@ -179,4 +210,6 @@
 
     </footer>
 </body>
+
+<script src="./assets/scripts/dropdown.js"></script>
 </html>
