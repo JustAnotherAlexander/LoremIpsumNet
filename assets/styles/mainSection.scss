@@ -1,14 +1,4 @@
-
-$primaryColor: #3E9CDC;
-$borderColor: #286690;
-
-$sectionBackground: #272733;
-$footerBacground: #3D4050;
-$buttonBorderColor: #6F6D7B;
-$mainSectionInactiveButtonColor: #FFFFFF;
-$mainSectionActiveButtonBorder: 1px solid #FFFFFF;
-$mainSectionInactiveButtonBorder: 1px solid #6F6D7B;
-
+@import 'blueTheme';
 
 .mainContent {
     height: 850px;
@@ -39,7 +29,7 @@ $mainSectionInactiveButtonBorder: 1px solid #6F6D7B;
                 letter-spacing: -2px;
             } 
             & .boldText {
-                color: #3E9CDC;
+                color: $primaryColor;
             }
         }
         .mainContent__textWrapper {

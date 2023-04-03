@@ -1,17 +1,4 @@
-/* Header variables */
-
-/* Header Colors */
-$headerBackground: rgba(16, 16, 29, 0.9);
-$headerActiveNavigationLinkColor: #43ABF0;
-$headerInactiveNavLink: #FFFFFF;
-
-/* Header Fonts */
-$headerFontFamily: 'Lato';
-$headerFontStyle: normal;
-$headerFontWeight: 600;
-$headerFontSize: 13px;
-$headerFontLineHeight: 16px;
-/*End of Header variables */
+@import 'blueTheme';
 
 .header {
     position: sticky;

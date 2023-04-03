@@ -1,9 +1,11 @@
-@import 'reset';
-@import 'header';
-@import 'mainSection';
-@import 'footer';
-@import 'orderSection';
-@import 'burgerMenu';
+@import 'reset'; 
+@import 'header'; // header styles
+@import 'burgerMenu'; // styles for the sidemenu
+@import 'mainSection'; // styles for the first section
+@import 'orderSection'; // styles for the second section with inputs and submit buttons
+@import 'footer'; // styles for the footer section
+
+
 
 a {
     text-decoration: none;
@@ -15,18 +17,18 @@ a {
     width:100%;
 }
 
-
-
 .orderSection__shemeSlider {
     display: none;
 }
+
+/* start of the adaptive checks */
 
 @media(max-width: 1750px) {
     .orderSection__separator {
         width: 65px;
         overflow: hidden;
     }
-
+/* for the the first version of slyder
     .orderSection__slider {
         max-width: 770px !important;
         width: 64% !important;
@@ -36,7 +38,7 @@ a {
     .orderSection__sliderText {
         width: 100% !important;
     }
-
+*/
     .footer {
         height: 160px;
     }
@@ -92,11 +94,11 @@ a {
     .orderSection__shemeItem:hover {
         transform: scale(1);
       }
-
+/* for the first version of slyder
     .orderSection__shemeSliderContainer {
         display: none !important;
     }
-
+*/
     .orderSection__separator {
         display: none !important;
     }
@@ -212,16 +214,10 @@ a {
     }
 
     .mainContent__Wrapper {
-        height: 444px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 65%;
         margin-top: 100px;
     }
 
     .mainContent__titleWrapper {
-        width: 97%;
         margin-left: 0px !important;
     }
 
@@ -236,7 +232,6 @@ a {
     }
 
     .mainContent__buttonsWrapper {
-        display: flex;
         height: 43px !important;
         margin-top: 50px !important;
         width: 100%;
@@ -247,15 +242,8 @@ a {
 
     .mainContent__button {
         width: 90px !important;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         padding: 15px 10px !important;
-        gap: 10px;
         margin-left: 0px !important; 
-        border: 1px solid #6f6d7b;
-        border-radius: 4px;
     }
 
     .orderSection {
@@ -266,32 +254,11 @@ a {
     .orderSection__wrapper {
         height: 650px !important;
         width: 61% !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
     }
 
     .orderSection__title {
         font-size: 24px !important;
         display: block !important;
-    }
-
-    .orderSection__subtitle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-family: "Lato";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px !important;
-        line-height: 22px;
-        display: flex;
-        align-items: center;
-        margin-top: 25px;
-        color: #bbb;
-        letter-spacing: 1px;
     }
 
     .orderSection__shemeSlider {
@@ -304,7 +271,7 @@ a {
 
     .orderSection__slider {
         width: 64% !important;
-        height: 64px !important;
+        height: 100px !important;
         margin-top: 30px !important;
         margin-bottom: 10px;
     }
@@ -327,3 +294,5 @@ a {
         width: 150px !important;
     }
 }
+
+/* end of the adaptive checks */

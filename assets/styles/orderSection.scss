@@ -1,14 +1,4 @@
-/*Common variables*/
-$sectionBackground: #272733;
-$titleFontColor: #FFFFFF;
-$subtitleFontColor: #BBBBBB;
-$commonFontColor: #FFFFFF;
-$blueThemeBackground: #3E9CDC;
-$blueThemeBorderColor: #286690;
-$shemeItemBorder: 5px solid $blueThemeBorderColor;
-$dropdownMenuItemColor: #42A9ED;
-
-
+@import 'blueTheme';
 
 option {
     width: 370px;
