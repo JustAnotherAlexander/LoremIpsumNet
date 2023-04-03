@@ -15,6 +15,7 @@ a {
     display: flex;
     flex-direction: column;
     width:100%;
+    overflow: hidden;
 }
 
 .orderSection__shemeSlider {
@@ -247,8 +248,12 @@ a {
     }
 
     .orderSection {
-        height: 1200px !important;
+        height: 1250px !important;
         width: 100% !important;
+    }
+
+    .orderSection__sliderBar {
+        margin-top: 10px !important; 
     }
 
     .orderSection__wrapper {

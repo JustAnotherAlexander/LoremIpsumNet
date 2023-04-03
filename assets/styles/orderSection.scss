@@ -403,7 +403,9 @@ option {
     overflow: hidden;
 }
 
-
+.hidden {
+  display: none;
+}
 
 .scaled {
   transition: 1s !important;

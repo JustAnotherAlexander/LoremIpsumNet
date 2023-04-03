@@ -50,8 +50,14 @@
         overflow: hidden;
         margin-top: 850px;
         transition: 1s;
+        transform: scale(1);
     }
     
+    .hidden {
+        transition: 1s;
+        transform: scale(0);
+    }
+
     .selected {
         color: $headerActiveNavigationLinkColor!important;
         transition: 1s;
