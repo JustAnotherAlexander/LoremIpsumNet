@@ -15,6 +15,12 @@ a {
     width:100%;
 }
 
+
+
+.orderSection__shemeSlider {
+    display: none;
+}
+
 @media(max-width: 1750px) {
     .orderSection__separator {
         width: 65px;
@@ -57,21 +63,57 @@ a {
     }
 }
 
+@media(max-width: 1400px) {
+    .orderSection__separator {
+        display: none !important;
+    }
+}
+
 @media(max-width: 1125px) {
+
+    .header__logo {
+        display: none !important;
+    }
 
     .mainContent__buttonsWrapper {
         margin-top: 25px;
+    }
+    
+    .orderSection__sheme {
+        margin-top: 0px !important;
+        width:320px !important;
+    }
+
+    .orderSection__shemeItem {
+        transform: scale(0.1);
+      //  display: none !important;
+    }
+
+    .orderSection__shemeItem:hover {
+        transform: scale(1);
+      }
+
+    .orderSection__shemeSliderContainer {
+        display: none !important;
+    }
+
+    .orderSection__separator {
+        display: none !important;
     }
 
     .orderSection {
         height: 1200px;
     }
-
+/* for the first version of slider
     .orderSection__shemeSlider {
         width:100%;
-        display: flex;
+        display: flex !important;
         justify-content: center;
         align-items: center;
+
+        & .orderSection__shemeItem {
+            display: block !important;
+        }
     }
 
     .orderSection__shemeSliderLeftArrow {
@@ -84,15 +126,14 @@ a {
         color: #fff;
         font-size: 25px;
     }
-
+*/
     .orderSection__inputWrapper {
         margin-top: 0px !important;
         flex-direction: column;
     }
 
     .orderSection__shemeItem {
-        width: 100px !important;
-        margin: 0 20px;
+        width: 50px !important;
     }
 
     .orderSection__Input {
@@ -181,7 +222,7 @@ a {
 
     .mainContent__titleWrapper {
         width: 97%;
-         margin-left: 0px;
+        margin-left: 0px !important;
     }
 
     .mainContent__title {
@@ -231,6 +272,11 @@ a {
         margin: 0 auto;
     }
 
+    .orderSection__title {
+        font-size: 24px !important;
+        display: block !important;
+    }
+
     .orderSection__subtitle {
         display: flex;
         justify-content: center;
@@ -249,9 +295,7 @@ a {
     }
 
     .orderSection__shemeSlider {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
 
     .orderSection__fileWrapper {

@@ -41,7 +41,13 @@ option {
             text-transform: uppercase;
             margin-top: -15px;
             color: $titleFontColor;
+
+            & .boldText {
+              margin-top: 0px;
+              color: #3E9CDC;
+          }
         }
+
         .orderSection__subtitle {
             display: flex;
             justify-content: center;
@@ -70,6 +76,13 @@ option {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                
+                transition: 1s;
+
+                .orderSection__shemeItem:hover {
+                  transform: scale(1);
+                }
+
                 .orderSection__shemeImage {
                     width:100px;
                     height:100px;
@@ -171,7 +184,8 @@ option {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+                cursor: pointer;
+
                 .orderSection__addFileText {
                     font-family: 'Lato';
                     font-style: normal;
@@ -184,6 +198,11 @@ option {
 
                     color: #272733;
                 }
+            }
+                            
+            .orderSection__addFileButton:hover {
+              background-color:  $blueThemeBackground;
+              color: $commonFontColor;
             }
         }
         
@@ -201,6 +220,7 @@ option {
             background: $blueThemeBackground;
             border: 1px solid #FFFFFF;
             border-radius: 4px;
+            cursor: pointer;
 
             .orderSection__submitButtonText {
                 font-family: 'Lato';
@@ -215,7 +235,10 @@ option {
 
                 color: $commonFontColor;
             }
-
+        }
+        .orderSection__submitButton_active:hover {
+          background-color: $blueThemeBorderColor;
+          border: 1px solid $blueThemeBorderColor;
         }
     }
 }
@@ -260,6 +283,7 @@ option {
         background: rgba(39, 39, 51, 0.9);
         border: 1px solid #3D4050;
         border-radius: 3px;
+        z-index: 8;
       }
       
       .orderSection__ItemLabel + .orderSection__InputItem + .orderSection__ItemLabel {
@@ -337,7 +361,7 @@ option {
     transition: all 0.3s ease-out;
   
     opacity: 0;
-    z-index: 8;
+    z-index: 0;
   }
 
   
@@ -387,4 +411,11 @@ option {
     width: 150px;
     display: flex;
     overflow: hidden;
+}
+
+
+
+.scaled {
+  transition: 1s !important;
+  transform: scale(1) !important;
 }

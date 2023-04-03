@@ -19,6 +19,7 @@ $headerFontLineHeight: 16px;
     width: 100%;
     height: 100px;
     background-color: $headerBackground;
+    z-index: 10;
 
     .header__wrapper {
         display: flex;
@@ -38,7 +39,13 @@ $headerFontLineHeight: 16px;
                 display: flex;
                 justify-content: space-between;
                 .menu__item {
-                    margin:auto;
+                    margin: auto;
+
+                    .menu__link:hover {
+                        color: $headerActiveNavigationLinkColor;
+                        transition: 0.5s;
+                    }
+
                     .menu__link {
                         font-family: $headerFontFamily;
                         font-style: $headerFontStyle;
@@ -46,6 +53,7 @@ $headerFontLineHeight: 16px;
                         font-size: $headerFontSize;
                         line-height: $headerFontLineHeight;
                         color: $headerInactiveNavLink;
+                        transition: 0.5s;
                     }
                     & .selected {
                         color: $headerActiveNavigationLinkColor;

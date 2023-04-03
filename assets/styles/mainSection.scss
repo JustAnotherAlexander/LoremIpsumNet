@@ -60,7 +60,6 @@ $mainSectionInactiveButtonBorder: 1px solid #6F6D7B;
         }
         .mainContent__buttonsWrapper {
             display: flex;
-
             height:43px;
             .mainContent__button {
                 width: 181px;
@@ -73,11 +72,17 @@ $mainSectionInactiveButtonBorder: 1px solid #6F6D7B;
                 margin-left: 35px;
                 border: $mainSectionInactiveButtonBorder;
                 border-radius: 4px;
+                cursor: pointer;
             }
             & .active {
                 background: $primaryColor;
                 border: $mainSectionActiveButtonBorder;
                 color:$mainSectionInactiveButtonColor
+            }
+
+            .mainContent__button:hover {
+                background-color: $borderColor;
+                color: $mainSectionInactiveButtonColor;
             }
         }
     }
